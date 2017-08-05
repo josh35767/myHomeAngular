@@ -1,0 +1,16 @@
+<form (ngSubmit)="newLink()">
+  <div class="form-group">
+    <label for="label-input"> Label for Link </label>
+    <input class="form-control" type="text" name="label" id="label-input" [(ngModel)]="label" placeholder="Google">
+  </div>
+  <div class="form-group">
+    <label for="link-input"> Link Url</label>
+    <input class="form-control" type="text" name="link" id="link-input" [(ngModel)]="url" placeholder="https://www.google.com">
+  </div>
+
+  <button class="button"> Add a link </button>
+</form>
+
+<div *ngFor="let link of links">
+  <a [href]="link.url" target="_blank">{{link.name}}</a>
+</div>
