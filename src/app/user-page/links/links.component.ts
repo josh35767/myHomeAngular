@@ -6,7 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./links.component.css']
 })
 export class LinksComponent implements OnInit {
-  links = [];
+  links = [
+    {
+      name: "Youtube",
+      url: "https://www.youtube.com"
+    },
+    {
+      name: "Google",
+      url: "https://www.google.com"
+    },
+    {
+      name: "Facebook",
+      url: "https://www.youtube.com"
+    }
+  ];
   label:string = "";
   url:string = "";
 
